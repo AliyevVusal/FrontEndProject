@@ -1,0 +1,46 @@
+
+#shopmain{
+    .filterbar{
+
+        .filterbox{
+            ul{
+                padding: 0 0 !important;
+                
+                li{
+                    list-style: none;
+                    .daynamicbar{
+                        .text{
+                            a{
+                                text-decoration: none;
+                                color: #202435;
+                            }
+                        }
+                    }
+
+                    #beverages,#breads,#breakfast,#Vegetables,#Meats    {
+                        display: none;
+                        padding: 0 0 0 30px!important;
+                        li{
+                            .insidebar{
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pricefilter{
+
+        }
+
+        img{
+            width: 100%;
+        }
+
+    }
+
+    .productbox{
+
+    }
+}

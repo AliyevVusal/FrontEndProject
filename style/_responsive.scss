@@ -1,5 +1,7 @@
 @media (max-width : 576px) {
 
+    
+    //Header
     .covid{
        p{
            font-size: 8px !important;
@@ -17,15 +19,24 @@
         display: block !important;
     }
 
+
+    //Index
+
     #slayder{
 
         .slayder-index{
-            
+
+            img{
+                border-radius: 10px;
+                width: 100% !important;
+                height: 300px !important;
+            }
+
             .slaydercontent{
-                width: 35% !important;
-                top: 10px !important;
-                left: 20px !important;
-    
+                width: 100% !important;
+                top: 50% !important;
+                transform: translatey(-50%);
+                left: 20px !important;    
                 .sctop{
     
                     .sctext{
@@ -107,7 +118,7 @@
 
     #saleproducts{
 
-
+    overflow: hidden;
         .elementsboxs{
 
             .carts{
@@ -148,6 +159,10 @@
 
     }
 
+    #weekendsalewidget{
+        overflow: hidden;
+    }
+
     #productsadvertising{
 
         .advertising{
@@ -164,10 +179,13 @@
         .productsallbox{
 
             .main{
-                height: 360px !important;
+                height: 360px !important; 
             }
 
             .carts{
+
+                
+
                 width: 50% !important;
                 .hover{
                     opacity: 1 !important;
@@ -182,6 +200,10 @@
 
         }
 
+    }
+
+    #productsblog{
+        overflow: hidden;
     }
 
     #discountcoipon{
@@ -285,5 +307,55 @@
         }
 
     }
+
+    //contact
+    #contactinfo{
+
+        .location{
+            margin: 20px 0 !important;
+        }
+
+        .phone{
+            margin: 20px 0 !important;
+        }
+
+        .mail{
+            margin: 20px 0 !important;
+        }
+        
+    }
+
+    #Sendus{
+
+
+        .container-my{
+            padding: 10px;
+            margin: 0 0 !important;
+
+            .main{
+
+                .username{
+                    display: block !important;
+
+                    .name{
+                        width: 100%!important;
+                    }
+
+                    .email{
+                        width: 100%!important;
+                    }
+                }
+
+            }
+
+
+        }
+
+
+
+
+    }
+
+    
     
 }

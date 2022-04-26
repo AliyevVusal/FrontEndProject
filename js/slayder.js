@@ -2,6 +2,7 @@
 $('.slayder-index').slick({
     dots: false,
     infinite: true,
+    autoplay:true,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -23,7 +24,7 @@ $('.slayder-index').slick({
         }
       },
       {
-        breakpoint: 576,
+        breakpoint: 575,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -41,6 +42,7 @@ $('.slayder-index').slick({
   $('.productslayder').slick({
     dots: false,
     infinite: true,
+    autoplay:true,
     speed: 800,
     slidesToShow: 5,
     slidesToScroll: 1,
