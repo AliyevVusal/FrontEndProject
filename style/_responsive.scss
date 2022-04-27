@@ -15,6 +15,10 @@
         display: none;
     }
 
+    #sidebar{
+        display: block !important;
+    }
+
     #mobileheader{
         display: block !important;
     }
@@ -354,6 +358,42 @@
 
 
 
+    }
+
+    //Shop Wide
+
+    #shopmain{
+        .filterbar{
+            display: none!important;
+        }
+
+        .shoploop{
+            display: none !important;
+        }
+
+        .productbox{
+            .products{
+                .carts{
+                    .hover{
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                        bottom: 15px !important;
+                        background-color: transparent !important;
+                        button{
+                            padding: 5px 40px !important;
+                        }
+                    }
+
+                    width: 50% !important;
+                }
+            }
+        }
+
+
+    }
+
+    #productbest{
+        display: none !important;
     }
 
     

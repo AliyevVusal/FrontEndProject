@@ -808,10 +808,14 @@
 }
 
 #sidebar{
+
+    display: none;
     visibility: hidden;
-    opacity: 0;
     width: 0%;
-    height: 100%;
+    opacity: 0;
+    overflow-y: scroll;
+    transition: 0.8s;
+    height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
@@ -1429,14 +1433,15 @@ footer{
         .fotertopbox{
             padding: 35px 0;
             text-align: center;
-            border-bottom: 1px solid #71778e;
+            border-bottom: 1px solid #71778e57;
             .fttop{
                 display: flex;
                 text-align: center;
                 justify-content: space-around;
                 
                 .hr{
-                    border-right: 1px solid #71778e;
+                    border-right: 1px solid #71778e57;
+                    padding: 0 30px;
                 }
     
                 .fftbox{
