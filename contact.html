@@ -63,7 +63,7 @@
                                         <ul>
                                             <li>
                                                 <div class="dropdownTranslate">
-                                                    <span class="dropbtnTranslate">English</span>
+                                                    <span class="dropbtnTranslate">English<i class="fa-solid fa-chevron-right"></i></span>
                                                     <div class="dropdown-contentTranslate">
                                                       <a href="#">English</a>
                                                       <a href="#">Spanish</a>
@@ -74,7 +74,7 @@
                                             <li>
 
                                                 <div class="dropdownMoneyType">
-                                                    <span class="dropbtnMoney">USD</span>
+                                                    <span class="dropbtnMoney">USD<i class="fa-solid fa-chevron-right"></i></span>
                                                     <div class="dropdown-contentMoney">
                                                       <a href="#">USD</a>
                                                       <a href="#">INR</a>
@@ -368,7 +368,7 @@
                                                 <a id="bsmaina" href="#">Shop Lists</a>
                                                 <a href="#">Shop Default</a>
                                                 <a href="#">Shop Right Sidebar</a>
-                                                <a href="#">Shop Wide</a>
+                                                <a href="./Shop wide.html">Shop Wide</a>
                                                 <a href="#">Lisy Left Sidebar</a>
                                                 <a href="#">Load More Button</a>
                                                 <a href="#">Infinite Scrolling</a>
@@ -684,13 +684,13 @@
             <div class="row align-items-center">
                 <div class="col-4">
                     <div class="mhleft">
-                        <i class="fa-solid fa-bars"></i>
+                        <i id="menu" class="fa-solid fa-bars"></i>
                     </div>
                 </div>
 
                 <div class="col-4">
                     <div class="mhcenter">
-                        <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/bacola-logo-mobile.png" alt="">
+                        <a href="Index.html"><img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/bacola-logo-mobile.png" alt=""></a>
                     </div>
                 </div>
 
@@ -705,6 +705,43 @@
         </div>
     </header>
 
+    <div id="mobilefotternav">
+
+        <div class="hcsearch">
+            <input type="text" placeholder="Search for products...">
+            <i class="fa-solid fa-magnifying-glass"></i> 
+        </div>
+
+        <div class="allbox">
+            <div class="box">
+                <a href="Index.html">
+                    <i class="fa-solid fa-store"></i>
+                    <p>Store</p>
+                </a>
+            </div>
+            <div class="box">
+                <i id="searchicons" class="fa-solid fa-magnifying-glass"></i>
+                <p>Search</p>
+            </div>
+            <div class="box">
+                <a href="">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>Wishlist</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="Login.html">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Account</p>
+                </a>
+            </div>
+            <div class="box">
+                <i id="menu" class="fa-solid fa-bars"></i>
+                <p>Catagories</p>
+            </div>
+        </div>
+    </div>
+
     <section id="sidebar">
 
         <div class="sbtop">
@@ -712,7 +749,7 @@
                 <a href=""><img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/bacola-logo.png" alt=""></a>
             </div>
             <div class="sbtright">
-                <i class="fa-solid fa-xmark"></i>
+                <i id="sidebarclose" class="fa-solid fa-xmark"></i>
             </div>
         </div>
 
@@ -1629,12 +1666,12 @@
             <div class="container">
                 <div class="fotertopbox">
                     <div class="fttop">
-                        <div class="fttbox hr"><i class="fa-solid fa-clover"></i>&nbsp;&nbsp;<span>Everyday fresh products</span></div>
-                        <div class="fttbox hr"><i class="fa-solid fa-clover"></i>&nbsp;&nbsp;<span>Everyday fresh products</span></div>
-                        <div class="fttbox hr"><i class="fa-solid fa-clover"></i>&nbsp;&nbsp;<span>Everyday fresh products</span></div>
-                        <div class="fttbox"><i class="fa-solid fa-clover"></i>&nbsp;&nbsp;<span>Everyday fresh products</span></div>
+                        <div class="fttbox hr"><i class="fa-solid fa-building-wheat"></i>&nbsp;&nbsp;<span>Everyday fresh products</span></div>
+                        <div class="fttbox hr"><i class="fa-solid fa-truck"></i>&nbsp;&nbsp;<span>Free delivery for order over $70</span></div>
+                        <div class="fttbox hr"><i class="fa-solid fa-percent"></i>&nbsp;&nbsp;<span>Daily Mega Discounts</span></div>
+                        <div class="fttbox"><i class="fa-solid fa-circle-dollar-to-slot"></i>&nbsp;&nbsp;<span>Best price on the market</span></div>
                     </div>
-            </div>
+               </div>
 
                 <div class="ftbottom">
 
@@ -1751,12 +1788,12 @@
                         </div>
 
                         <div class="col-lg-6">
-                        <div class="fbbright">
+                           <div class="fbbright">
                             <a href="">Privacy Policy</a>
                             <a href="">Terms and Conditions</a>
                             <a href="">Cookie</a>
                             <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/payments.jpg" alt="">
-                        </div>
+                           </div>
                         </div>
                     </div>
                 </div>
@@ -1768,11 +1805,6 @@
 
     
 </body>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="./js/slayder.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/main.js"></script>
 </html>

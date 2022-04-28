@@ -9,6 +9,8 @@
 
 @import "_shopwide.scss";
 
+@import "_productdetails.scss";
+
 html::-webkit-scrollbar{
     width: 10px;
 }
@@ -707,6 +709,7 @@ body{
         border-radius: 8px;
 
         .carts{
+            width: 100%;
             transition: 0.7s;
             border: 1px solid #edeef5;
             position: relative;

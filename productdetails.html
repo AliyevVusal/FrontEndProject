@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&family=Inter:wght@300;700&family=Jost:wght@200;300;400&family=Montserrat:wght@400;500;600&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Jost:wght@200;300;400&family=Montserrat:wght@400;500;600&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="style/bootstrap.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -705,6 +707,43 @@
             </div>
         </div>
     </header>
+
+    <div id="mobilefotternav">
+
+        <div class="hcsearch">
+            <input type="text" placeholder="Search for products...">
+            <i class="fa-solid fa-magnifying-glass"></i> 
+        </div>
+
+        <div class="allbox">
+            <div class="box">
+                <a href="Index.html">
+                    <i class="fa-solid fa-store"></i>
+                    <p>Store</p>
+                </a>
+            </div>
+            <div class="box">
+                <i id="searchicons" class="fa-solid fa-magnifying-glass"></i>
+                <p>Search</p>
+            </div>
+            <div class="box">
+                <a href="">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>Wishlist</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="Login.html">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Account</p>
+                </a>
+            </div>
+            <div class="box">
+                <i id="menu" class="fa-solid fa-bars"></i>
+                <p>Catagories</p>
+            </div>
+        </div>
+    </div>
 
     <section id="sidebar">
 
@@ -1521,6 +1560,369 @@
 
     </section>
 
+    <!-- PRODACTDETAILS -->
+
+
+    <section id="product">
+        <div class="container">
+            
+            <div class="prodactinfo">
+                <div class="ptop">
+                    <h1>All Natural Italian-Style Chicken Meatballs</h1>
+                    <div class="productinfo">
+                        <div class="brands">
+                            <p><span>Brands:&nbsp;</span>Welch's</p>
+                        </div>
+    
+                        <div class="starts">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <a href="">1 REVIEW</a>
+                        </div>
+    
+                        <div class="sku">
+                            <p><span> SKU:&nbsp;</span>ZU49VOR</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="pbottom">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            
+                            <div class="productimgslider">
+                                <div>
+                                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-45-768x691.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image2-36-768x691.jpg" alt="">
+                                </div>
+                            </div>
+  
+                        </div>
+        
+                        <div class="col-lg-7">
+                            <div class="main">
+                                <div class="row">
+                                    <div class="pbleft">
+                                        <div class="price">
+                                            <span>$7.25</span><span id="discounte">$9.35</span> 
+                                        </div>
+    
+                                        <div class="stock">
+                                            <span>IN STOCK</span> 
+                                        </div>
+    
+                                        <div class="paragraf">
+                                            <p>Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent</p>
+                                        </div>
+    
+                                        <div class="countercart">
+                                            <span id="minus"><i class="fa-solid fa-minus"></i></span><span id="count">1</span><span id="plus"><i class="fa-solid fa-plus"></i></span> <button>Add to Cart</button>
+                                        </div>
+    
+                                        <div class="favoris">
+                                            <div class="favoriticons">
+                                                <a href="">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                    <span>ADD TO WISHLIST</span>
+                                                </a>
+                                            </div>
+                                            <div class="compare">
+                                                <a href="">
+                                                    <i class="fa-solid fa-arrow-down-up-across-line"></i>
+                                                    <span>COMPARE</span>
+                                                </a>
+                                            </div>
+                                        </div>
+    
+                                        <div class="type">
+                                            <ul>
+                                                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;<span>Type: Organic</span></li>
+                                                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;<span>MFG: Jun 4.2021</span></li>
+                                                <li><i class="fa-solid fa-check"></i>&nbsp;&nbsp;<span>LIFE: 30 days</span></li>
+                                            </ul>
+                                        </div>
+    
+                                        <div class="category">
+                                            <p>Category:<a href="">Meats & Seafood</a></p>
+                                            <p>Tags:<a href="">chicken</a>,<a href="">natural</a>,<a href="">organic</a></p>
+                                        </div>
+    
+                                        <div class="social">
+                                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                            <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                            <a href=""><i class="fa-brands fa-reddit"></i></a>
+                                            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                                        </div>
+    
+                                    </div>
+                                    <div class="pbright">
+                                        <div class="top">
+                                            <span>Covid-19 Info: We keep delivering.</span>
+                                        </div>
+                                        <div class="bottom">
+                                            <ul>
+                                                <li id="marginnone"><i class="fa-solid fa-truck-fast"></i>&nbsp;<div class="text"><span>Free Shipping apply to all orders over $100</span></div></li>
+                                                <li><i class="fa-solid fa-burger"></i>&nbsp;<span>Guranteed 100% Organic from natural farmas</span></li>
+                                                <li><i class="fa-solid fa-circle-dollar-to-slot"></i>&nbsp;<span>1 Day Returns if you change your mind</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="related">
+        <div class="container">
+        <h4>RELATED PRODUCTS</h4>
+            <div class="row">
+                <div class="carts">
+                    <div class="main">
+                        <div class="contentimg">
+                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-346x310.jpg" alt="">
+                        </div>
+
+                        <div class="contenttext">
+
+                            <a href="">All Natural Italian-Style Chicken Meatballs</a>
+                            <span class="cartsstock">IN STOCK</span>
+                            <div class="cartsrating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>1</span>
+                            </div>
+                            <div class="cartselementprices">
+                                <span class="prices">$5.49</span>
+                                <span class="saleprices">$4.49</span>
+                            </div> 
+                        </div>
+
+                        <i class="fa-solid fa-compress resize"></i>
+                        <i class="fa-solid fa-heart like"></i>
+                    </div>
+
+                    <div class="hover">
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+                <div class="carts">
+                    <div class="main">
+                        <div class="contentimg">
+                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-346x310.jpg" alt="">
+                        </div>
+
+                        <div class="contenttext">
+
+                            <a href="">All Natural Italian-Style Chicken Meatballs</a>
+                            <span class="cartsstock">IN STOCK</span>
+                            <div class="cartsrating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>1</span>
+                            </div>
+                            <div class="cartselementprices">
+                                <span class="prices">$5.49</span>
+                                <span class="saleprices">$4.49</span>
+                            </div> 
+                        </div>
+
+                        <i class="fa-solid fa-compress resize"></i>
+                        <i class="fa-solid fa-heart like"></i>
+                    </div>
+
+                    <div class="hover">
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+                <div class="carts">
+                    <div class="main">
+                        <div class="contentimg">
+                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-346x310.jpg" alt="">
+                        </div>
+
+                        <div class="contenttext">
+
+                            <a href="">All Natural Italian-Style Chicken Meatballs</a>
+                            <span class="cartsstock">IN STOCK</span>
+                            <div class="cartsrating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>1</span>
+                            </div>
+                            <div class="cartselementprices">
+                                <span class="prices">$5.49</span>
+                                <span class="saleprices">$4.49</span>
+                            </div> 
+                        </div>
+
+                        <i class="fa-solid fa-compress resize"></i>
+                        <i class="fa-solid fa-heart like"></i>
+                    </div>
+
+                    <div class="hover">
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+                <div class="carts">
+                    <div class="main">
+                        <div class="contentimg">
+                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-346x310.jpg" alt="">
+                        </div>
+
+                        <div class="contenttext">
+
+                            <a href="">All Natural Italian-Style Chicken Meatballs</a>
+                            <span class="cartsstock">IN STOCK</span>
+                            <div class="cartsrating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>1</span>
+                            </div>
+                            <div class="cartselementprices">
+                                <span class="prices">$5.49</span>
+                                <span class="saleprices">$4.49</span>
+                            </div> 
+                        </div>
+
+                        <i class="fa-solid fa-compress resize"></i>
+                        <i class="fa-solid fa-heart like"></i>
+                    </div>
+
+                    <div class="hover">
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recently">
+        <div class="container">
+            <h4>RECENTLY VIEWED PRODUCTS</h4>
+                <div class="row">
+                    <div class="carts">
+                        <div class="main">
+                            <div class="contentimg">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-346x310.jpg" alt="">
+                            </div>
+    
+                            <div class="contenttext">
+    
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+                                <span class="cartsstock">IN STOCK</span>
+                                <div class="cartsrating">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>1</span>
+                                </div>
+                                <div class="cartselementprices">
+                                    <span class="prices">$5.49</span>
+                                    <span class="saleprices">$4.49</span>
+                                </div> 
+                            </div>
+    
+                            <i class="fa-solid fa-compress resize"></i>
+                            <i class="fa-solid fa-heart like"></i>
+                        </div>
+    
+                        <div class="hover">
+                            <button>Add to Cart</button>
+                        </div>
+    
+                    </div>
+                    <div class="carts">
+                        <div class="main">
+                            <div class="contentimg">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-346x310.jpg" alt="">
+                            </div>
+    
+                            <div class="contenttext">
+    
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+                                <span class="cartsstock">IN STOCK</span>
+                                <div class="cartsrating">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>1</span>
+                                </div>
+                                <div class="cartselementprices">
+                                    <span class="prices">$5.49</span>
+                                    <span class="saleprices">$4.49</span>
+                                </div> 
+                            </div>
+    
+                            <i class="fa-solid fa-compress resize"></i>
+                            <i class="fa-solid fa-heart like"></i>
+                        </div>
+    
+                        <div class="hover">
+                            <button>Add to Cart</button>
+                        </div>
+    
+                    </div>
+                    <div class="carts">
+                        <div class="main">
+                            <div class="contentimg">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-346x310.jpg" alt="">
+                            </div>
+    
+                            <div class="contenttext">
+    
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+                                <span class="cartsstock">IN STOCK</span>
+                                <div class="cartsrating">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>1</span>
+                                </div>
+                                <div class="cartselementprices">
+                                    <span class="prices">$5.49</span>
+                                    <span class="saleprices">$4.49</span>
+                                </div> 
+                            </div>
+    
+                            <i class="fa-solid fa-compress resize"></i>
+                            <i class="fa-solid fa-heart like"></i>
+                        </div>
+    
+                        <div class="hover">
+                            <button>Add to Cart</button>
+                        </div>
+    
+                    </div>
+                    <div class="carts">
+                        <div class="main">
+                            <div class="contentimg">
+                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-346x310.jpg" alt="">
+                            </div>
+    
+                            <div class="contenttext">
+    
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+                                <span class="cartsstock">IN STOCK</span>
+                                <div class="cartsrating">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>1</span>
+                                </div>
+                                <div class="cartselementprices">
+                                    <span class="prices">$5.49</span>
+                                    <span class="saleprices">$4.49</span>
+                                </div> 
+                            </div>
+    
+                            <i class="fa-solid fa-compress resize"></i>
+                            <i class="fa-solid fa-heart like"></i>
+                        </div>
+    
+                        <div class="hover">
+                            <button>Add to Cart</button>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    </section>
 
 
 
@@ -1673,5 +2075,8 @@
 </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
     <script src="./js/jquery.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="./js/productdetails.js"></script>
     <script src="./js/main.js"></script>
 </html>

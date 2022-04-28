@@ -1,21 +1,60 @@
+
 $(document).ready(function(){
+
+  let a=0;
   $(".bplus").click(function(){
+    a++;
+    
+    if(a%2==0){
+      this.style.transform = "rotate(0deg)"
+    }else{
+      this.style.transform = "rotate(45deg)"
+    }
     $("#beverages").slideToggle();
   })
 
   $(".brplus").click(function(){
+
+    a++;
+    
+    if(a%2==0){
+      this.style.transform = "rotate(0deg)"
+    }else{
+      this.style.transform = "rotate(45deg)"
+    }
     $("#breads").slideToggle();
   })
 
   $(".breplus").click(function(){
+    a++;
+    
+    if(a%2==0){
+      this.style.transform = "rotate(0deg)"
+    }else{
+      this.style.transform = "rotate(45deg)"
+    }
     $("#breakfast").slideToggle();
   })
 
   $(".vgplus").click(function(){
+    a++;
+    
+    if(a%2==0){
+      this.style.transform = "rotate(0deg)"
+    }else{
+      this.style.transform = "rotate(45deg)"
+    }
     $("#Vegetables").slideToggle();
   })
 
   $(".mplus").click(function(){
+    a++;
+    
+    if(a%2==0){
+      this.style.transform = "rotate(0deg)"
+    }else{
+      this.style.transform = "rotate(45deg)"
+    }
     $("#Meats").slideToggle();
   })
 })

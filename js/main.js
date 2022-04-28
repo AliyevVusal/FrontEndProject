@@ -1,4 +1,5 @@
 
+
 // Get the modal
 var modal = document.getElementById("pcmyModal");
 
@@ -55,15 +56,18 @@ window.onclick = function(event) {
 
 
 //Side Bar
-let menu = document.querySelector("#menu");
+let menu = document.querySelectorAll("#menu");
+let bottommenu = document.querySelector('#bottommenu');
 let sidebar = document.querySelector("#sidebar");
-let sidebarclose = document.querySelector("#sidebarclose")
+let sidebarclose = document.querySelector("#sidebarclose");
 
-menu.addEventListener('click' , () => {
-  sidebar.style.visibility = "visible"
-  sidebar.style.opacity = "1"
-  sidebar.style.width = "100%"
-})
+menu.forEach(element => {
+  element.addEventListener('click' , () => {
+    sidebar.style.visibility = "visible"
+    sidebar.style.opacity = "1"
+    sidebar.style.width = "100%"
+  })
+});
 
 sidebarclose.addEventListener('click',()=>{
   sidebar.style.visibility = "hidden"
@@ -72,13 +76,22 @@ sidebarclose.addEventListener('click',()=>{
 })
 
 
+
+
 //ALL CATAGORIES BUTTON
 $(document).ready(function(){
 
+  //Footer Nav Searh
+  $('#searchicons').click(function(){
+    $('.hcsearch').slideToggle();
+  })
+
+  //Header Catagories Bar
   $(".atext").click(function(){
     $(".categoriesbar").slideToggle();
   });
 
+  //
   $(".sbatext").click(function(){
     $(".sbcategoriesbar").slideToggle();
   });
@@ -109,12 +122,42 @@ $(document).ready(function(){
 
 });
 
+//Basket
+
+let carts = document.querySelectorAll('.carts');
+
+let addbtn = document.querySelectorAll('#addbtn');
+
+var basketarray = [];
+
+addbtn.forEach(e => {
+
+  e.addEventListener('click',()=>{
+
+    var maindiv = e.parentElement.parentElement.children[1];
+    
+    var productimg = maindiv.children[0].children[0].children[0].src;
+
+    var productname = maindiv.children[1].children[1].innerHTML;
+
+    var productprice = maindiv.children[1].children[4].children[1].innerHTML;
 
 
+    basketarray.push(JSON.parse(
+      {img:productimg,
+      name:productname,
+      price:productprice}));
 
+    if(localStorage.getItem('abc')===null){
+      
+      localStorage.setItem('abc',basketarray);
 
+    }else{
 
+      localStorage.setItem('abc',basketarray);
 
-
-
-
+    }
+    
+  });
+  
+});

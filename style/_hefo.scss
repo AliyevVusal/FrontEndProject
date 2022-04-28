@@ -264,9 +264,10 @@
             border-radius: 8px;
             width: 85%;
             input{
+                width: 90%;
                 border-radius: 8px;
                 background-color: #f3f4f7;
-                padding: 20px 345px 20px 10px;
+                padding: 20px 0 20px 10px;
                 border: none;
                 outline: none;
             }
@@ -277,6 +278,8 @@
         }
 
         .hcright{
+            display: flex;
+            position: relative;
             #profil{
                 padding: 9px 12px;
                 font-weight: normal;
@@ -288,19 +291,33 @@
                 margin-right: 15px;
             }
 
-            span{
-                margin-right: 15px;
-            }
+            .basketsection{
+                width: 70%;
+                #countproduct{
+                    color: #FFFFFF;
+                    padding: 3px 10px;
+                    background-color: #EA2B0F;
+                    border-radius: 100%;
+                    margin: 0 0!important;
+                    position: absolute;
+                    top: -25px;
+                    right: 35px;
+                }
 
-            #basket{
-                padding: 9px 12px;
-                font-weight: normal;
-                width: 1rem;
-                border: 1px solid #fff1ee;
-                background-color: #fff1ee;
-                color: #ea2b0f;
-                border-radius: 100%;
-                
+                span{
+                    margin-right: 15px;
+                }
+    
+                #basket{
+                    padding: 9px 12px;
+                    font-weight: normal;
+                    width: 1rem;
+                    border: 1px solid #fff1ee;
+                    background-color: #fff1ee;
+                    color: #ea2b0f;
+                    border-radius: 100%;
+                    
+                }
             }
         }
 
@@ -493,10 +510,10 @@
                         border: 1px solid #9b9bb4a5;
                         border-left: none;
                         background-color: #FFFFFF;
-                        height: 527px;
+                        height: 97%;
                         position: absolute;
                         top: 0;                        
-                        left: 280px;
+                        left: 278px;
                         transition: 0.5s;
                         visibility: hidden;
                         width: 0;
@@ -608,9 +625,9 @@
                         transition: 0.4s;
                         position: absolute;
                         top: 75px;
-                        left: -552px;
+                        left: -554px;
                         z-index: 11111;
-                        width: 177.5%;
+                        width: 178.2%;
                         background-color: #FFF;
                         .dropdown-contentShope{
                             margin: 60px 0;
@@ -789,10 +806,15 @@
 
 #mobileheader{
     display: none;
+    position: sticky;
+    z-index: 11111;
+    top: 0;
+    background-color: #FFFFFF;
     padding: 10px 0;
     .mhleft{
         i{
             font-size: 20px;
+            color: #233A95;
         }
     }
 
@@ -808,10 +830,10 @@
 }
 
 #sidebar{
-
     display: none;
     visibility: hidden;
     width: 0%;
+    z-index: 111111;
     opacity: 0;
     overflow-y: scroll;
     transition: 0.8s;
@@ -1241,6 +1263,7 @@
 
             li{
                width: 100%;
+               padding: 0 0 0 10px;
 
                a{
                    text-decoration: none;
@@ -1427,6 +1450,55 @@
 
 }
 
+#mobilefotternav{
+    display: none;
+    position: fixed;
+    padding-top: 10px;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 111111;
+
+    .hcsearch{
+        display: none;
+        margin: 0 auto;
+        background-color: #f3f4f7;
+        border-radius: 8px;
+        width: 80%;
+        margin-bottom: 10px;
+        input{
+            width: 90%;
+            border-radius: 8px;
+            background-color: #f3f4f7;
+            padding: 10px 0 10px 10px;
+            border: none;
+            outline: none;
+        }
+        i{
+            font-size: 15px;
+        }
+
+    }
+
+    .allbox{
+        display: flex;
+        text-align: center;
+        .box{
+            width: 20%;
+            text-decoration: none;
+            font-size: 12px;
+            color: #71778e;
+            a{
+                text-decoration: none;
+                font-size: 12px;
+                color: #71778e;
+            }
+        }
+
+
+    }
+}
+
 footer{
     #footertop{
         background-color: #F7F8FD;
@@ -1486,6 +1558,7 @@ footer{
 
     #footerbottom{
         background-color: #FFFFFF;
+        margin-bottom: 40px;
 
         .fbtop{
 
