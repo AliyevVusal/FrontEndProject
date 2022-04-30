@@ -191,10 +191,7 @@
                 height: 360px !important; 
             }
 
-            .carts{
-
-                
-
+            .carts{                
                 width: 50% !important;
                 .hover{
                     opacity: 1 !important;
@@ -433,6 +430,125 @@
     #productbest{
         display: none !important;
     }
+
+
+    //Product Details
+
+    #product{
+
+        .prodactinfo{
+
+            .ptop{
+                h1{
+                    font-size: 17px!important;
+                }
+
+                .productinfo{
+                    width: 100%!important;
+
+                    .brands{
+                        display: block !important;
+                    }   
+
+                    .starts{
+                     width: 70% !important;
+                     display: block !important;
+                     border: none !important;  
+                    }
+
+                    .sku{
+                        display: none !important;
+                    }
+
+                    
+
+                }
+                
+            }
+
+            .pbottom{
+                .main{
+
+                    .pbleft{
+                        display: block !important;
+                        width: 100% !important;
+
+                        .countercart{
+                            width: 100%;
+                            text-align: center;
+                            button{
+                                margin-top: 20px !important;
+                                margin: 20px auto !important;
+                                display: block !important;
+                            }
+                        }
+
+                        .favoris{
+                           .favoriticons{
+                               width: 100% !important;
+                               display: block !important;
+                            } 
+                           .compare{
+                               display: block !important; 
+                            }
+                        }
+
+                        .social{
+                           i{
+                               padding: 8px 8px !important;
+                           } 
+                        }
+                    }
+
+                    .pbright{
+                        width: 100% !important;
+
+                        .top{
+                            width: 100% !important;
+                        }
+                    }
+
+
+                }
+            }
+
+        }
+
+
+
+    }
+
+    //Basket
+
+    .cartproduct{
+
+        .contentbasketbox{
+            display: block !important;
+        }
+
+        .basketbox{
+            display: flex !important;
+
+            .productimg{
+                img{
+                    width: 10% !important;
+                }
+            }
+
+            .productname{
+                h3{
+                    display: inline;
+                }
+            }
+
+            
+
+        }
+
+    }
+
+    
+
 
     
     

@@ -435,6 +435,7 @@
                             </ul>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -705,7 +706,7 @@
 
                 <div class="col-4">
                     <div class="mhright">
-                        <span>$0.00</span>
+                        <span id="mobileheaderprice">$0.00</span>
                         <a id="basket" href=""><i class="fa-solid fa-basket-shopping"></i></a>
                     </div>
                 </div>
@@ -1250,7 +1251,7 @@
                     <div class="sbfShop">
                         <ul>
                             <li><a href="./Shop wide.html">Shope Wide</a></li>
-                            <li><a href="./">Contact</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
                             <li><a href="./Login.html">Profil</a></li>
                             <li><a href="./productdetails.html">Product Details</a></li>
                             <li><a href="./basket.html">Basket</a></li>
@@ -1827,7 +1828,7 @@
                     <div data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine" class="elementsboxs">
                         <div class="row">
                         
-                            <div class="carts left">
+                            <div id="1" class="carts left">
 
                                 <a href="./productdetails.html">
                                     <div class="main">
@@ -1859,7 +1860,7 @@
 
                             </div>
 
-                            <div class="carts">
+                            <div id="2" class="carts">
                                 <a href="./productdetails.html">
                                     <div class="main">
                                         <div class="contentimg">
@@ -1889,7 +1890,7 @@
                                 </a>
                             </div>
 
-                            <div class="carts right">
+                            <div id="3" class="carts right">
                                 <a href="./productdetails.html">
                                     <div class="main">
                                         <div class="contentimg">
@@ -1919,7 +1920,7 @@
                                 </a>
                             </div>
 
-                            <div class="carts bleft">
+                            <div id="4" class="carts bleft">
                                 <a href="./productdetails.html">
                                     <div class="main">
                                         <div class="contentimg">
@@ -1949,7 +1950,7 @@
                                 </a>
                             </div>
 
-                            <div class="carts">
+                            <div id="5" class="carts">
                                 <a href="./productdetails.html">
                                     <div class="main">
                                         <div class="contentimg">
@@ -1979,7 +1980,7 @@
                                 </a>
                             </div>
                             
-                            <div class="carts bright">
+                            <div id="6" class="carts bright">
                                 <a href="./productdetails.html">
                                     <div class="main">
                                         <div class="contentimg">
@@ -2861,6 +2862,14 @@
             </div>
 
     </footer>
+
+    <section id="notification">
+        <div class="nmain">
+            <span id="nproductcount"></span>
+            <span id="nproductname">.</span>
+            <a href="./basket.html">View cart</a>
+        </div>
+    </section>
 
 </body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -568,7 +568,7 @@
                     span{
                         transition: 0.3s;
                         text-decoration: none;
-                        font-weight: 600;
+                        font-weight: bold;
                         font-size: 15px;
                         color: rgba(0, 0, 0, 0.6);
                         padding: 40px 0;
@@ -834,9 +834,8 @@
     visibility: hidden;
     width: 0%;
     z-index: 111111;
-    opacity: 0;
     overflow-y: scroll;
-    transition: 0.8s;
+    transition: 0.4s;
     height: 100vh;
     position: fixed;
     left: 0;

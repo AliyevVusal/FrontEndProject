@@ -24,8 +24,13 @@ body{
         .productinfo{
             display: flex;
             align-items: center;
+            text-align: center;
             padding: 10px 0;
-            P{
+            p{
+                margin: 0 0 !important;
+            }
+            .brands{
+                width: 33%;
                 margin: 0 0 !important;
                 color: #3E445A;
                 font-size: 12px;
@@ -35,8 +40,10 @@ body{
                 }
             }
             .starts{
+                width: 33%;
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 padding: 0 10px;
                 margin: 0 20px;
                 border-left: 1px solid #edeef5;
@@ -54,7 +61,17 @@ body{
                     color: #71778E;
                     text-decoration: none;
                 }
+
+                
             }
+            
+            .sku{
+                text-align: center;
+                color: #9B9BB4;
+                font-size: 12px;
+            }
+
+            
             
         }
     }

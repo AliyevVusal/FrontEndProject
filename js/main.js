@@ -1,5 +1,3 @@
-
-
 // Get the modal
 var modal = document.getElementById("pcmyModal");
 
@@ -64,14 +62,12 @@ let sidebarclose = document.querySelector("#sidebarclose");
 menu.forEach(element => {
   element.addEventListener('click' , () => {
     sidebar.style.visibility = "visible"
-    sidebar.style.opacity = "1"
     sidebar.style.width = "100%"
   })
 });
 
 sidebarclose.addEventListener('click',()=>{
   sidebar.style.visibility = "hidden"
-  sidebar.style.opacity = "0"
   sidebar.style.width = "0%"
 })
 
@@ -128,36 +124,110 @@ let carts = document.querySelectorAll('.carts');
 
 let addbtn = document.querySelectorAll('#addbtn');
 
-var basketarray = [];
+if(localStorage.getItem('basket')===null) {
+  localStorage.setItem('basket',JSON.stringify([]))
+}
 
 addbtn.forEach(e => {
-
+  let basket = JSON.parse(localStorage.getItem('basket'));
   e.addEventListener('click',()=>{
-
     var maindiv = e.parentElement.parentElement.children[1];
-    
     var productimg = maindiv.children[0].children[0].children[0].src;
-
     var productname = maindiv.children[1].children[1].innerHTML;
-
     var productprice = maindiv.children[1].children[4].children[1].innerHTML;
+    var productid = maindiv.parentElement.getAttribute('id');
+    var nproductname = document.querySelector('#nproductname');
+    var nproductcount = document.querySelector('#nproductcount');
+    var notification = document.querySelector('#notification');
 
+    let exists = false;
 
-    basketarray.push(JSON.parse(
-      {img:productimg,
-      name:productname,
-      price:productprice}));
+    for(let product of basket){
+      if(product.Id == productid){
+        product.Count++;
+        exists = true;
 
-    if(localStorage.getItem('abc')===null){
-      
-      localStorage.setItem('abc',basketarray);
+        notification.style.visibility = 'visible';
+        notification.style.opacity = '1';
+        nproductcount.innerHTML ='x' + product.Count;
+        nproductname.innerHTML = product.Name + ' has been added to your cart';
 
-    }else{
+        setTimeout(() => {
+          notification.style.visibility = 'hidden';
+          notification.style.opacity = '0';
+        }, 500);
+        
+        
 
-      localStorage.setItem('abc',basketarray);
+      }
+
+      localStorage.setItem('basket',JSON.stringify(basket));
 
     }
-    
+
+    if(!exists){
+
+        basket.push({
+          Img:productimg,
+          Name:productname,
+          Price:productprice,
+          Count : 1,
+          Id : productid
+        });
+
+        nproductcount.innerHTML ='x' + 1;
+        nproductname.innerHTML = productname + ' has been added to your cart';
+        notification.style.visibility = 'visible';
+        notification.style.opacity = '1';
+
+        setTimeout(() => {
+          notification.style.visibility = 'hidden';
+          notification.style.opacity = '0';
+        }, 500);
+
+
+
+        localStorage.setItem('basket',JSON.stringify(basket));
+
+        CountBasket();
+
+    }
+
   });
   
 });
+
+
+// //Basket Count
+function CountBasket(){
+
+  let basket = JSON.parse(localStorage.getItem('basket'));
+
+  let count = basket.length;
+
+  document.querySelector('#countproduct').innerHTML = count;
+
+  let totalmainindex = 0;
+
+  for(let product of basket){
+ 
+
+    mainprice = Number(product.Price.slice(1));
+
+    totalindex = product.Count * mainprice
+
+    totalmainindex+=totalindex;
+
+  }
+
+  //document.querySelector('#mobileheaderprice').innerHTML = totalmainindex;
+
+  //document.querySelector('#basketprice').innerHTML = totalmainindex;
+
+}
+
+
+CountBasket();
+
+
+
