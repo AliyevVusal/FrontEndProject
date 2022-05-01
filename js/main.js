@@ -124,13 +124,16 @@ let carts = document.querySelectorAll('.carts');
 
 let addbtn = document.querySelectorAll('#addbtn');
 
-if(localStorage.getItem('basket')===null) {
-  localStorage.setItem('basket',JSON.stringify([]))
-}
 
 addbtn.forEach(e => {
-  let basket = JSON.parse(localStorage.getItem('basket'));
   e.addEventListener('click',()=>{
+
+    if(localStorage.getItem('basket')===null) {
+      localStorage.setItem('basket',JSON.stringify([]))
+    }
+
+    let basket = JSON.parse(localStorage.getItem('basket'));
+
     var maindiv = e.parentElement.parentElement.children[1];
     var productimg = maindiv.children[0].children[0].children[0].src;
     var productname = maindiv.children[1].children[1].innerHTML;
@@ -193,12 +196,12 @@ addbtn.forEach(e => {
 
     }
 
+    CountBasket();
   });
   
 });
 
-
-// //Basket Count
+//Basket Count
 function CountBasket(){
 
   let basket = JSON.parse(localStorage.getItem('basket'));
@@ -210,7 +213,7 @@ function CountBasket(){
   let totalmainindex = 0;
 
   for(let product of basket){
- 
+
 
     mainprice = Number(product.Price.slice(1));
 
@@ -218,14 +221,11 @@ function CountBasket(){
 
     totalmainindex+=totalindex;
 
-  }
+  }  
 
-  //document.querySelector('#mobileheaderprice').innerHTML = totalmainindex;
-
-  //document.querySelector('#basketprice').innerHTML = totalmainindex;
+  document.querySelector('#basketprice').innerHTML = kesr(totalmainindex);
 
 }
-
 
 CountBasket();
 

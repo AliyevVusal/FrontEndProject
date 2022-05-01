@@ -30,7 +30,7 @@ function  BasketDiv() {
             totalprice+=total;
         }
 
-        document.querySelector('#msubtotal').innerHTML = totalprice;
+        document.querySelector('#msubtotal').innerHTML = kesr(totalprice);
 
         var  myproduct = "";
 
@@ -70,7 +70,13 @@ function  BasketDiv() {
 
                             <div class="col-lg-2">
                                 <div class="subtotalproduct">
-                                    <h3 id="subtotal">${Number(product.Count) * Number(product.Price.slice(1))}</h3>
+                                    <h3 id="subtotal">${kesr( (Number(product.Count) * Number(product.Price.slice(1))) )}</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-1">
+                                <div class="removesicons">
+                                    <i id="reomovesicon" class="fa-solid fa-x"></i>
                                 </div>
                             </div>
 
@@ -96,6 +102,7 @@ function  BasketDiv() {
                         e.Count++;
                         element.parentElement.children[1].innerHTML = e.Count;
                         localStorage.setItem('basket',JSON.stringify(basket));
+                            BasketDiv();
                     }
                 })
 
@@ -122,12 +129,84 @@ function  BasketDiv() {
 
 
         document.querySelector('#basketreset').addEventListener('click',()=>{
-
             basket=[];
             localStorage.setItem('basket',JSON.stringify(basket));
             BasketDiv();
+            CountBasket();
         })
 
+        let reomovesicon = document.querySelectorAll('#reomovesicon');
+
+        reomovesicon.forEach(element => {
+            element.addEventListener('click',()=>{
+
+                let removeelement = element.parentElement.parentElement.parentElement.getAttribute('id');
+                let carts = document.querySelectorAll('.basketbox');
+                
+                for(let i=0; i<basket.length; i++){
+                    if(basket[i].Id == removeelement){
+                        let undoitem = basket[i];
+                        let unprice = basket[i].Price;
+                        unprice = unprice.slice(1);
+                        console.log(unprice);
+                        unprice = Number(unprice);
+                        let undototal   = totalprice - (Number(basket[i].Count) * unprice);
+                        totalprice = undototal
+                        document.querySelector('#msubtotal').innerHTML = kesr(undototal)
+                        document.querySelector('#basketprice').innerHTML=kesr(undototal)
+                        basket.splice(i,i);
+                        document.querySelector('#undo').style.visibility = 'visible';
+                        document.querySelector('#undo').style.opacity = '1';
+                        
+
+
+                        setTimeout(() => {
+                            
+                            document.querySelector('#undo').style.visibility = 'hidden';
+                            document.querySelector('#undo').style.opacity = '0';
+                            if(basket.length == 1){
+                                basket = [];
+                                localStorage.setItem('basket',JSON.stringify(basket));
+                                location.reload();
+                            }
+                        }, 500);
+                            
+
+                        
+
+                        document.querySelector('#undo').addEventListener('click',()=>{
+                            basket.push(undoitem);
+                            let unpricep = undoitem.Price;
+                            unpricep = unpricep.slice(1);
+                            console.log(unpricep);
+                            unpricep = Number(unpricep);
+                            let undototalp   = totalprice + (Number(basket[i].Count) * unprice);
+                            totalprice = undototalp;
+                            document.querySelector('#msubtotal').innerHTML = kesr(undototalp)
+
+                            document.getElementById('list').innerHTML = myproduct;
+                            document.querySelector('#basketprice').innerHTML = kesr(undototalp)
+                            
+                            CountBasket();
+                            
+                        })
+
+                    }
+
+                }
+
+                carts.forEach(element => {
+                    if(element.children[0].getAttribute('id') == removeelement){
+                        element.remove();
+                    }
+                });
+
+                
+
+                //basket.find(element => element.Id === removeelement);
+                localStorage.setItem('basket',JSON.stringify(basket));    
+            })
+        });
 
 
     }
@@ -136,5 +215,9 @@ function  BasketDiv() {
 
 
 
+
 BasketDiv();
 
+function kesr(x) {
+    return Number.parseFloat(x).toFixed(2);
+}

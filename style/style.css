@@ -314,6 +314,11 @@
   #product .prodactinfo .pbottom .main .pbright .top {
     width: 100% !important;
   }
+  .emptybasket {
+    width: 100%;
+    display: block !important;
+    margin: 0 0 !important;
+  }
   .cartproduct .contentbasketbox {
     display: block !important;
   }
@@ -3609,6 +3614,43 @@ body {
   background-color: #ffffff;
 }
 
+.emptybasket {
+  text-align: center;
+  padding: 40px;
+  margin: 100px;
+}
+
+.emptybasket .text {
+  margin: 40px;
+}
+
+.emptybasket .icons {
+  margin: 40px 0;
+}
+
+.emptybasket .icons i {
+  font-size: 100px;
+  color: #F04652;
+  padding: 40px 45px 40px 40px;
+  background-color: #d5d5e0;
+  border-radius: 100%;
+}
+
+.emptybasket .bottom {
+  margin: 40px 0 0 0;
+}
+
+.emptybasket .bottom a {
+  color: #fff;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  padding: 20px 70px;
+  background-color: #233a95;
+  border: 1px solid #233a95;
+}
+
 .cartproduct {
   margin: 50px 0;
 }
@@ -3621,6 +3663,9 @@ body {
 .cartproduct #list .basketbox {
   border-top: 1px solid #c2c2d398;
   border-bottom: 1px solid #c2c2d398;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cartproduct #list .basketbox h3 {
@@ -3649,6 +3694,13 @@ body {
 
 .cartproduct #list .basketbox .quality #count {
   margin: 0 8px;
+}
+
+.cartproduct #list .basketbox .removesicons i {
+  font-size: 15px;
+  color: #F04652;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .cartproduct .totalpricebox {
@@ -3687,6 +3739,23 @@ body {
   background-color: red;
   color: #FFFFFF;
   border-radius: 20px;
+}
+
+#undo {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  right: 20px;
+  bottom: 10px;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 13px;
+  border: none;
+  padding: 5px 70px;
+  background-color: #233a95;
+  border: 1px solid #233a95;
 }
 
 html::-webkit-scrollbar {

@@ -1567,9 +1567,17 @@
 
         <div class="emptybasket">
 
-            <span>YOUR CART IS CURRENTLY EMPTY.</span>
+            <div class="text">
+                <span>YOUR CART IS CURRENTLY EMPTY</span>
+            </div>
 
-            <button>Return to shop</button>
+            <div class="icons">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+
+            <div class="bottom">
+                <a href="./Index.html">Return to shop</a>
+            </div>
 
         </div>
 
@@ -1624,7 +1632,7 @@
                                     </div>
                                 </div>
         
-                                <div class="col-lg-4">
+                                <div class="col-lg-3">
                                     <div class="productname">
                                         <h3>Name</h3>
                                     </div>
@@ -1648,6 +1656,12 @@
                                 <div class="col-lg-2">
                                     <div class="subtotalproduct">
                                         <h3 id="subtotal">Subtotal</h3>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-1">
+                                    <div class="removesicons">
+                                        <i id="reomovesicon" class="fa-solid fa-x"></i>
                                     </div>
                                 </div>
 
@@ -1688,6 +1702,8 @@
                 </div>
             </div>
         </div>
+
+        <button id="undo" type="button" >UNDO</button>
 
         <!-- FOTTER -->
         <footer>
